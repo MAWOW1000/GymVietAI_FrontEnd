@@ -14,9 +14,12 @@ import { Link } from 'react-router-dom';
 import './Sidebar.scss'
 import sidebarHeader_logoImg from '../../../assets/image/logoImage2.jpg'
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const SideBar = ({ image, collapsed, toggled, handleToggleSidebar }) => {
     const navigative = useNavigate();
+    const [activeIndex, setActiveIndex] = useState(0)
+
     return (
         <ProSidebar
             // collapsed={collapsed}
@@ -49,22 +52,31 @@ const SideBar = ({ image, collapsed, toggled, handleToggleSidebar }) => {
                 <Menu iconShape="circle">
                     <MenuItem
                         icon={<MdHomeFilled />}
-                        className='sidebarItem active'
+                        className='sidebarItem'
+                        active={activeIndex === 0}
+                        onClick={() => (setActiveIndex(0), navigative(''))}
                     // suffix={<span className="badge red">Dev Pham</span>}
                     >
                         Dashboard
-                        <Link to='/admin' />
                     </MenuItem>
 
 
-                    <MenuItem icon={<FaUser />} className='sidebarItem'>
-                        Manage Users
-                        <Link to='/admin/manage-user' />
+                    <MenuItem
+                        icon={<FaUser />}
+                        className='sidebarItem'
+                        active={activeIndex === 1}
+                        onClick={() => (setActiveIndex(1), navigative('manage-user'))}
+                    >
+                        Manage User
                     </MenuItem>
 
-                    <MenuItem icon={<FaBookOpen />} className='sidebarItem'>
+                    <MenuItem
+                        icon={<FaBookOpen />}
+                        className='sidebarItem'
+                        active={activeIndex === 2}
+                        onClick={() => (setActiveIndex(2), navigative('manage-exercise'))}
+                    >
                         Manage Exercise
-                        <Link to='/admin/manage-exercise' />
                     </MenuItem>
                 </Menu>
                 {/* <Menu iconShape="circle">
