@@ -12,10 +12,10 @@ import { MdHomeFilled } from "react-icons/md";
 import { FaUser, FaBookOpen } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import './Sidebar.scss'
-import sidebarHeader_logoImg from '../../../assets/image/logoImage2.jpg'
+import sidebarHeader_logoImg from '../../../assets/images/logoImage2.jpg'
 import { useNavigate } from 'react-router-dom';
 
-const SideBar = ({ image, collapsed, toggled, handleToggleSidebar }) => {
+const SideBar = ({ images, collapsed, toggled, handleToggleSidebar }) => {
     const navigative = useNavigate();
     return (
         <ProSidebar
