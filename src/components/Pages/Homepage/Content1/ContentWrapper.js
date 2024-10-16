@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.content`
+const Wrapper = styled.div`
 
     .bg {
         font-family: "Muli", sans-serif;

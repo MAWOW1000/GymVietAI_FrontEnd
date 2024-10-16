@@ -1,5 +1,10 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
+import ForgotPassword from "./components/Pages/ForgotPassword/ForgotPassword";
+import Login from './components/Pages/Login/Login'
+import Register from './components/Pages/Register/Register'
 import Homepage from './components/Pages/Homepage/Homepage';
 
 function App() {
@@ -21,10 +26,14 @@ function App() {
     //   </header>
     // </div>
 
-    <div>
-      <Homepage />
-    </div>
+        <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+        </Routes>
 
+        // <Homepage />
+        
   );
 }
 

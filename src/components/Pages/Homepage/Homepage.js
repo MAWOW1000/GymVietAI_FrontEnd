@@ -10,6 +10,6 @@ function Homepage(){
                 <Footer />
             </div>
     )
-}
+}   
 
 export default Homepage
