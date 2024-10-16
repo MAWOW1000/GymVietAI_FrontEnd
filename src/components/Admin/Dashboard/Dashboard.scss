@@ -1,0 +1,68 @@
+.dashBoard {
+    .dashBoard__header {
+        display: flex;
+        justify-content: space-between;
+        color: var(--textColor);
+        font-size: 24px;
+        align-items: center;
+        margin: 32px 0;
+
+        .dashBoard__header__text {
+            font-size: 22px;
+        }
+
+        .dashBoard__header__sub {
+            display: flex;
+            gap: 24px;
+            font-size: 20px;
+            align-items: center;
+
+            .dashBoard__header__sub__img {
+                width: 42px;
+                height: auto;
+            }
+
+            .dashBoard__header__sub__avatar {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                .dashBoard__header__sub__imgUser {
+                    width: 32px;
+                    height: 32px;
+                    background-color: white;
+                    border-radius: 20px;
+                }
+
+                .dashBoard__header__sub__username {
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .dashBoard__chart {
+        display: flex;
+        margin-top: 30px;
+        gap: 20px;
+        padding-right: 12px;
+
+        .dashBoard__PieChart {
+            background-color: var(--lightBackground);
+            border-radius: 12px;
+            display: flex;
+            color: var(--textColor);
+            align-items: center;
+        }
+
+        .dashBoard__BarChart {
+            background-color: var(--lightBackground);
+            flex: 1;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

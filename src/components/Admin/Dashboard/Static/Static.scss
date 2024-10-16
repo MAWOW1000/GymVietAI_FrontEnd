@@ -1,0 +1,41 @@
+.dashBoard {
+    .staticRow {
+        display: flex;
+        gap: 40px;
+
+        .staticCol {
+            width: 270px;
+            height: 120px;
+            background-color: var(--lightBackground);
+            color: white;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: rgba(1, 5, 17, 0.3) 0px 8px 28px 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+
+            .staticHeading {
+                display: flex;
+                font-size: 16px;
+                align-items: center;
+
+                .staticIcon {
+                    color: var(--primaryPink);
+                    margin-right: 16px;
+                }
+
+                .staticTitle {
+                    color: var(--textColorBack);
+                    font-size: 16px;
+                    padding-top: 10px; 
+                }
+            }
+            .staticNumber{
+                font-size: 34px;
+            }
+        }
+    }
+}

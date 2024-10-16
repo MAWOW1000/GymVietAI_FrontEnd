@@ -6,6 +6,7 @@
   --primaryPink: #CB3CFF;
   --textColor: #F9FAFA;
   --lightBackground: #0B1739;
+  --textColorBack: #AEB4D7;
 }
 
 body {
@@ -98,3 +99,4 @@ body {
   font-weight: 900;
   font-style: normal;
 }
+
