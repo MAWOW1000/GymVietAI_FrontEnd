@@ -4,26 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Admin from './components/Admin/Admin';
-import Dashboard from './components/Admin/Dashboard/Dashboard';
-import ManageUser from './components/Admin/ManageUser/ManageUser';
-import ManageExercise from './components/Admin/ManageExercise/ManageExercise';
 import './index.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<App />} />
-
-        {/* Route admin dashboard */}
-        <Route path='/admin' element={<Admin />}>
-          <Route index element={<Dashboard />} />
-          <Route path='manage-user' element={<ManageUser />} />
-          <Route path='manage-exercise' element={<ManageExercise />} />
-        </Route>
-      </Routes>
+      <App/>
     </BrowserRouter>
   </React.StrictMode>
 );

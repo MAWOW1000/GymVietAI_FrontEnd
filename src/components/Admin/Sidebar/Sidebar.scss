@@ -1,3 +1,21 @@
+@import '/node_modules/react-pro-sidebar/dist/css/styles.css';
+
+//set color when hover, nexr page, focus
+.pro-sidebar .pro-menu .pro-menu-item>.pro-inner-item:hover,
+.pro-sidebar .pro-menu .pro-menu-item.active,
+.pro-sidebar .pro-menu .pro-menu-item>.pro-inner-item:focus {
+    color: var(--primaryPink);
+}
+
+// set color sidebar
+.pro-sidebar>.pro-sidebar-inner {
+    background-color: #081028;
+}
+
+.pro-sidebar .pro-menu.shaped .pro-menu-item>.pro-inner-item>.pro-icon-wrapper {
+    background-color: transparent;
+}
+
 .adminSidebar {
     .sidebarHeader {
         text-align: center;
@@ -11,29 +29,6 @@
                 width: 30px;
                 margin-right: 10px;
             }
-        }
-    }
-
-    .sidebarContent {
-        .pro-sidebar {
-            &>.pro-sidebar-inner {
-                background: #081028;
-            }
-        }
-
-        .sidebarItem {
-            &.active {
-                color: var(--primaryPink) !important;
-            }
-
-            .pro-icon-wrapper {
-                background-color: transparent !important;
-
-                .pro-icon {
-                    font-size: 18px;
-                }
-            }
-
         }
     }
 

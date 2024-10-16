@@ -1,0 +1,102 @@
+@import '/node_modules/bootstrap/dist/css/bootstrap.css';
+//Custome bootstrap
+
+//custome color for row
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    background-color: #0A1330;
+    color: white !important;
+}
+
+.table-striped>tbody>tr:nth-of-type(even)>* {
+    background-color: #0B1739;
+    color: white !important;
+}
+
+//custome color for hover tag
+.table-hover>tbody>tr:hover>* {
+    // --bs-table-accent-bg: var(--bs-table-hover-bg);
+    // color: var(--bs-table-hover-color);
+    cursor: pointer;
+}
+
+//change color for tag checked
+.table-hover>tbody>tr:hover:has(input[type='checkbox']:checked)>* {
+    // --bs-table-accent-bg: var(--bs-table-hover-bg);
+    // color: var(--bs-table-hover-color);
+    background-color: #231B51;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd):hover>*,
+.table-striped>tbody>tr:nth-of-type(even):hover>* {
+    background-color: #0a1539;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>*,
+.table-striped>tbody>tr:nth-of-type(even)>*,
+.table>thead>tr>* {
+    padding: 16px 0;
+    font-size: 16px;
+    padding-left: 24px;
+}
+
+.table>thead>tr>* {
+    font-weight: 400;
+}
+
+
+// pagination
+.pagination {
+
+    justify-content: center;
+    align-items: center;
+    //pagination 2-end
+    --bs-pagination-bg: transparent !important;
+    --bs-pagination-color: white !important;
+
+    //hover
+    --bs-pagination-hover-color: #ccc !important;
+    --bs-pagination-hover-bg: transparent !important;
+    --bs-pagination-hover-border-color: transparent !important;
+
+    //focus
+    --bs-pagination-focus-bg: transparent !important;
+    --bs-pagination-focus-color: transparent !important;
+    --bs-pagination-focus-box-shadow: transparent !important;
+
+    //active
+    --bs-pagination-active-color: white !important;
+    --bs-pagination-active-bg: var(--primaryPink) !important;
+    --bs-pagination-active-border-color: transparent !important;
+    --bs-pagination-active-border-radius: 50%;
+
+    //disable button
+    --bs-pagination-disabled-color: #576182 !important;
+    --bs-pagination-disabled-bg: transparent !important;
+    --bs-pagination-disabled-border-color: transparent !important;
+
+    //border
+    --bs-pagination-border-color: transparent !important;
+
+    .page-item .page-link {
+        border-radius: 16px !important;
+    }
+}
+
+/////////////////////////////////
+//Project
+
+.manageUserContent {
+    .table.table-borderless {
+        color: var(--textColor);
+        background-color: var(--lightBackground);
+
+        .tableUserIcon {
+            margin: 0px 16px;
+        }
+
+        input[type='checkbox'] {
+            accent-color: var(--primaryPink)
+        }
+    }
+
+}

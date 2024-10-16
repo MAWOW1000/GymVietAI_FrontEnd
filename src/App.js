@@ -1,40 +1,30 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import logo from './logo.svg';
-import './App.css';
-import ForgotPassword from "./components/Pages/ForgotPassword/ForgotPassword";
-import Login from './components/Pages/Login/Login'
-import Register from './components/Pages/Register/Register'
-import Homepage from './components/Pages/Homepage/Homepage';
-
+import Admin from './components/Admin/Admin';
+import Dashboard from './components/Admin/Dashboard/Dashboard';
+import ManageUser from './components/Admin/ManageUser/ManageUser';
+import ManageExercise from './components/Admin/ManageExercise/ManageExercise';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import HomePage from '../src/components/Pages/Homepage/Homepage'
+import Login from '../src/components/Pages/Login/Login'
+import Register from '../src/components/Pages/Register/Register'
+import Forgotpassword from '../src/components/Pages/ForgotPassword/Forgotpassword'
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
+    <div className="App">
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='login' element={<Login />} />
+        <Route path='register' element={<Register />} />
+        <Route path='forgot-password' element={<Forgotpassword />} />
 
-        <Routes>
-            <Route path="/" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/forgot-password" element={<ForgotPassword />} />
-        </Routes>
-
-        // <Homepage />
-        
+        <Route path='admin' element={<Admin />}>
+          <Route index element={<Dashboard />} />
+          <Route path='manage-user' element={<ManageUser />} />
+          <Route path='manage-exercise' element={<ManageExercise />} />
+        </Route>
+      </Routes>
+    </div >
   );
 }
 
 export default App;
+{/* <Route path='/' element={<App />}></Route> */ }
