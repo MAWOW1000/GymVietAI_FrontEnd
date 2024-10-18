@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import hero3 from "../../../assets/images/hero3.jpg";
+import hero3 from "../../../../assets/images/hero3.jpg";
 import Wrapper from "./ForgotpasswordWrapper";
 
 function ForgotPassword(){

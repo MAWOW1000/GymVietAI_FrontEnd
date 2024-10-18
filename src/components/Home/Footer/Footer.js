@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagramSquare } from "react-icons/fa";
-import homepagelogo from '../../../../assets/images/homepagelogo.png';
+import homepagelogo from '../../../assets/images/homepagelogo.png';
 import Wrapper from "./FooterWrapper"
 
 function Footer(){

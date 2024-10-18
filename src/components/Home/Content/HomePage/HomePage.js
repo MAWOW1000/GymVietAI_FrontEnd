@@ -6,7 +6,7 @@ import { IoFitnessSharp, IoNutrition } from "react-icons/io5";
 import { FaChevronRight, FaMapMarkerAlt } from "react-icons/fa";
 
 
-function Content1() {
+function HomePage() {
     const images = {
         hero: require('../../../../assets/images/hero.jpg'),
         class1: require('../../../../assets/images/class1.jpg'),
@@ -236,13 +236,13 @@ function Content1() {
                         <a href="">Appointment</a>
                     </div>
                     <div className="slider">
-                    <div className="slides" style={{ transform: `translateX(-${currentIndex * (360 + 10)}px)` }}> {/* Điều chỉnh translateX để chuyển slide */}
+                        <div className="slides" style={{ transform: `translateX(-${currentIndex * (360 + 10)}px)` }}> {/* Điều chỉnh translateX để chuyển slide */}
                             {Object.values(teamImages).map((src, index) => (
                                 <div className="slide" key={index}>
-                                    <img 
-                                        src={src} 
+                                    <img
+                                        src={src}
                                         alt={`Team member ${index + 1}`}
-                                        onError={(e) => { e.target.src = "defaultImage.jpg"; }} 
+                                        onError={(e) => { e.target.src = "defaultImage.jpg"; }}
                                     />
                                 </div>
                             ))}
@@ -258,7 +258,7 @@ function Content1() {
                             <span>
                                 <FaMapMarkerAlt />
                             </span>
-                            <p>333 Middle Winchendon Rd, Rindge,<br/>NH 03461</p>
+                            <p>333 Middle Winchendon Rd, Rindge,<br />NH 03461</p>
                         </div>
 
                         <div className="item">
@@ -270,7 +270,7 @@ function Content1() {
 
                         <div className="item">
                             <span>
-                            <IoMdMail />
+                                <IoMdMail />
                             </span>
                             <p>Support.gymcenter@gmail.com</p>
                         </div>
@@ -282,4 +282,4 @@ function Content1() {
     );
 }
 
-export default Content1;
+export default HomePage;

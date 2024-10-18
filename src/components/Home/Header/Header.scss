@@ -1,0 +1,14 @@
+.buttonGroup {
+    display: flex;
+    gap: 20px;
+    margin-right: 10px;
+    .btnSignup {
+        background-color: #0F0808 !important;
+    }
+
+    .btnSignup,
+    .btnLogin {
+        padding: 10px;
+        width: 100px;
+    }
+}
