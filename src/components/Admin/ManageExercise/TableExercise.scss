@@ -4,12 +4,10 @@
 //custome color for row
 .table-striped>tbody>tr:nth-of-type(odd)>* {
     background-color: #0A1330;
-    color: white !important;
 }
 
 .table-striped>tbody>tr:nth-of-type(even)>* {
     background-color: #0B1739;
-    color: white !important;
 }
 
 //custome color for hover tag
@@ -37,6 +35,7 @@
     padding: 16px 0;
     font-size: 16px;
     padding-left: 24px;
+    color: white !important;
 }
 
 .table-striped>tbody>tr:nth-of-type(odd)>td:last-child,
@@ -44,17 +43,15 @@
 .table>thead>tr>th:last-child {
     width: 140px;
     text-align: center;
-    padding-right: 24px;
+    padding-left: 0;
 }
 
 .table>thead>tr>* {
     font-weight: 400;
 }
 
-
 // pagination
 .pagination {
-
     justify-content: center;
     align-items: center;
     //pagination 2-end
@@ -93,21 +90,17 @@
 /////////////////////////////////
 //Project
 
-.manageUserContent {
-    .tableUsers {
-        padding-bottom: 4px;
+.manageExerciseContent {
+    .table.table-borderless {
+        color: var(--textColor);
+        background-color: var(--lightBackground);
 
-        .table.table-borderless {
-            color: var(--textColor);
-            background-color: var(--lightBackground);
+        .tableExerciseIcon {
+            margin: 0px 16px;
+        }
 
-            .tableUserIcon {
-                margin: 0px 19px;
-            }
-
-            input[type='checkbox'] {
-                accent-color: var(--primaryPink)
-            }
+        input[type='checkbox'] {
+            accent-color: var(--primaryPink)
         }
     }
 

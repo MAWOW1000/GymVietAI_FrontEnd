@@ -8,8 +8,8 @@ function TableUser() {
         // setPage(+selected.selected + 1)
     }
     return (
-        <>
-            <table className="table table-borderless table-striped table-hover">
+        <div className="tableUsers">
+            <table className="px-4 table table-borderless table-striped table-hover">
                 <thead className='theadUser'>
                     <tr>
                         <th scope="col"><input type='checkbox' /></th>
@@ -174,7 +174,7 @@ function TableUser() {
                 renderOnZeroPageCount={null}
             // forcePage={props.page - 1}
             />
-        </>
+        </div>
     );
 }
 
